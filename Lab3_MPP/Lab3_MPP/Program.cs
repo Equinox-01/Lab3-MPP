@@ -17,7 +17,7 @@ namespace Lab3_MPP
             for (int j = 0; j < ITERATION_CAPACITY; j++)
             {
                 mutex.Lock();
-                Console.WriteLine("Task {0}, value test variable: {1}", task_ident + 1, value_check++);
+                Console.WriteLine("Поток - {0} проверочное значение - {1}", task_ident + 1, value_check++);
                 mutex.Unlock();
                 Thread.Sleep(300);
             }
